@@ -9,9 +9,10 @@ html, body {
     position: fixed;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /* so the video takes up the whole screen */
 }
 
+/* mainly if using the front facing camera - to mirror the image to make it feel more natural */
 #camera--view, #camera--sensor, #camera--output {
     transform: scaleX(-1);
     filter: FlipH;
